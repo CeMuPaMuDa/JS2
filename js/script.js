@@ -1,8 +1,8 @@
 const goods = [
-    { title: "Shirt", price: 150 },
-    { title: "Socks", price: 50 },
-    { title: "Jacket", price: 350 },
-    { title: "Shoes", price: 250 },
+    { title: "Pepperoni Pizza", price: 150 },
+    { title: "Baked Pancakes", price: 50 },
+    { title: "Avocado", price: 350 },
+    { title: "Bunch of Orange", price: 250 },
 ];
 
 const renderGoodsItem = (title, price) => {

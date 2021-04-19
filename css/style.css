@@ -89,41 +89,22 @@ h6 {
 
 /* Main style */
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
-}
-
-.header-top {
-    background-color: rgb(121, 255, 32);
-    padding: 15px 0;
-}
-
-.top-menu {
-    display: flex;
-}
-
-.icons {
-    font-size: 2rem;
-    color: #fff;
-    margin-right: 8rem;
-}
-
-.search {
-    font-size: 2rem;
-    padding: 5px;
-}
-
-.header-bottom {
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 .menu-list {
     display: flex;
 }
 
-.menu-item {
-    margin-right: 8rem;
+.search-button,
+.cart-button,
+.profile-button {
+    background-color: transparent;
 }
