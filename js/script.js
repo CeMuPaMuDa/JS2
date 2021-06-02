@@ -1,17 +1,31 @@
-const goods = [
-    { title: "Pepperoni Pizza", price: 150 },
-    { title: "Baked Pancakes", price: 50 },
-    { title: "Avocado", price: 350 },
-    { title: "Bunch of Orange", price: 250 },
+"use strict";
+
+const products = [
+    { id: 1, title: "Бургер", price: 150 },
+    { id: 2, title: "Чизбургер", price: 80 },
+    { id: 3, title: "Чикенбургер", price: 100 },
+    { id: 4, title: "Гамбургер", price: 200 },
+    { id: 5, title: "Фишбургер", price: 150 },
+    { id: 6, title: "Биг Бургер", price: 200 },
+    { id: 7, title: "Биг Чизбургер", price: 100 },
+    { id: 8, title: "Биг Чикенбургер", price: 150 },
 ];
 
-const renderGoodsItem = (title, price) => {
-    return `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
+const renderProduct = (item, img = "img/Rectangle 10.png") =>
+    `<div class="product-item">
+                <img src="${img}" alt="image" class="product-img">
+                <h3 class="product-title">${item.title}</h3>
+                <p class="product-price">${item.price} руб</p>
+                <button class="by-btn">В корзину</button>
+            </div>`;
+
+const renderProducts = (list) => {
+    document
+        .querySelector(".mainContainer")
+        .insertAdjacentHTML(
+            "beforeend",
+            list.map((item) => renderProduct(item, item.img)).join("")
+        );
 };
 
-const renderGoodsList = (list) => {
-    let goodsList = list.map((item) => renderGoodsItem(item.title, item.price));
-    document.querySelector(".goods-list").innerHTML = goodsList;
-};
-
-renderGoodsList(goods);
+renderProducts(products);

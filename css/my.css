@@ -90,19 +90,22 @@ h6 {
 /* Main style */
 
 body {
-    background: #000 url(img/14589.jpg) repeat;
-    background-size: cover;
-    overflow-x: hidden;
+    background: #000;
     display: flex;
     flex-direction: column;
+    flex: auto;
+    height: 100%;
+    /* background-size: cover;
+    overflow-x: hidden;
+
     height: 100%;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    outline: none;
+    outline: none; */
 }
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 header {
@@ -128,7 +131,7 @@ footer {
 .main {
     width: 1260px;
     margin: 0 auto;
-    background: rgb(250, 250, 250);
+    background: rgb(201, 115, 250);
     height: max-content;
     opacity: 97%;
 }
@@ -145,13 +148,11 @@ footer {
     margin: 0 auto;
     background: yellowgreen;
     height: 50px;
-    margin-bottom: 40px;
 }
 
 .header__top {
     height: 50px;
     background: yellowgreen;
-    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -160,7 +161,7 @@ footer {
 .header__bottom {
     height: 70px;
     border: 1px grey solid;
-    background: gainsboro;
+    background: rgb(0, 0, 0);
 }
 
 .header__topLink {
@@ -173,22 +174,22 @@ footer {
 }
 
 .header__link {
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
 }
 
 .header__link:hover {
-    color: darkred;
+    color: rgb(201, 115, 250);
 }
 
 .header__top_input {
     width: 600px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 60px;
     padding: 5px 10px 5px 10px;
     border: none;
     font-family: "Montserrat", sans-serif;
-    color: darkred;
+    color: rgb(0, 0, 0);
 }
 
 .header__bottom {
@@ -205,7 +206,7 @@ footer {
 }
 
 .header__bottom_link {
-    color: grey;
+    color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     font-size: 25px;
     line-height: 70px;
@@ -216,13 +217,12 @@ footer {
 
 .header__bottom_link:hover {
     color: whitesmoke;
-    background: grey;
+    background: yellowgreen;
 }
 
 .cart-button {
     margin-right: 80px;
     width: 200px;
-    border-radius: 50px;
     color: whitesmoke;
     background: yellowgreen;
     text-transform: uppercase;
@@ -233,7 +233,7 @@ footer {
 }
 
 .cart-button:hover {
-    background: darkred;
+    background: rgb(201, 115, 250);
     box-shadow: none;
 }
 
@@ -246,7 +246,7 @@ footer {
 .product-title {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    color: grey;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin: 10px 0 5px 0;
 }
@@ -254,13 +254,9 @@ footer {
 .product-price {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    color: darkred;
+    color: rgb(18, 43, 43);
     text-align: center;
     margin: 10px 0 5px 0;
-}
-
-.product-item:hover {
-    transform: scale(1.05);
 }
 
 .product-item {
@@ -268,18 +264,17 @@ footer {
     text-decoration: none;
     transition: 1s;
     width: auto;
-    height: 260px;
-    border: grey 1px solid;
-    margin: 20px;
-    border-radius: 15px;
+    height: 295px;
+    border: yellowgreen 1px solid;
+    margin: 35px;
+    border-radius: 25px;
 }
 
 .by-btn {
     width: 120px;
     height: 30px;
-    border-radius: 15px;
     color: whitesmoke;
-    background: yellowgreen;
+    background: rgb(0, 0, 0);
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     border: none;
@@ -287,10 +282,11 @@ footer {
 }
 
 .by-btn:hover {
-    background: darkred;
+    background: yellowgreen;
     box-shadow: none;
 }
 
 .product-img {
-    border-radius: 15px 15px 0 0;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
 }
